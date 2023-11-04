@@ -2,46 +2,205 @@
 header {
     background-color: cadetblue;
 
-    .header-top {
-        padding: 6px 0;
-
-        .nav-left {
-            .header-social-link {
-                a {
-                    color: $color_white_1;
-                    font-size: $fs_3;
-                    display: inline-block;
-                    line-height: 1;
-                    margin-left: 20px;  
-                }
-            }
-            .header-social-link a:first-child {
-                margin-left: 0;
-            }
-        }
-
-        .nav-right {
-            
-            .user-info-block {
-                margin-bottom: 0;
-
-                li {
-                    display: inline-block;
-                    margin-left: 15px;
-                    list-style: none;
-
+    .main-header {
+        .header-top {
+            padding: 6px 0;
+    
+            .nav-left {
+                .header-social-link {
                     a {
                         color: $color_white_1;
-                        font-size: $fs_1;
-                        text-decoration: none;
+                        font-size: $fs_3;
+                        display: inline-block;
+                        line-height: 1;
+                        margin-left: 20px;  
 
-                        i {
-                            padding-right: 5px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                
+            }
+    
+            .nav-right {
+                
+                .user-info-block {
+                    margin-bottom: 0;
+                    margin-left: 40px;
+    
+                    li {
+                        display: inline-block;
+                        margin-left: 15px;
+                        list-style: none;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+    
+                        a {
+                            color: $color_white_1;
+                            font-size: $fs_1;
+                            text-decoration: none;
+    
+                            i {
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .header-main-area {
+            padding: 30px 0;
+            position: relative;
+            z-index: 1;
+
+            .logo {
+                margin-top: 0;
+                padding: 0;
+                line-height: 1;
+                height: auto;
+                background-color: transparent;
+
+
+                a {
+                    transition: all 0.4s;
+                    text-decoration: none;
+
+                    img {
+                        max-width: 100%;
+                        transition: all 0.4s;
+                        vertical-align: middle;
+                    }
+
+                }
+            }
+
+            .main-menu-area {
+                .main-menu {
+                    .desktop-menu{
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            li {
+                                position: relative;
+                                list-style: none;
+
+                                &.active a, &:hover a {
+                                    color: $color_black_1;
+                                }
+
+                                a {
+                                    color: $color_white_1;
+                                    font-size: 17px;
+                                    padding: 14px 15px;
+                                    font-weight: 700;
+                                    display: block;
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+
+                                    i {
+                                        font-size: $fs_1;
+                                        padding: 0 3px;
+                                    }
+                                }
+                                
+
+                                
+                                    ul {
+                                        &.dropdown {
+                                            top: 100%;
+                                            left: 0;
+                                            width: 220px;
+                                            position: absolute;
+                                            transition: all 0.4s;
+                                            background-color: $color_white_1;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                            z-index: 99999;
+                                            pointer-events: none;
+                                            transform: translateY(20px);
+                                            border: 1px solid $color_gray_3;
+
+                                            li {
+                                                margin-right: 0;
+                                                border-right: none;
+                                                flex-basis: 100%;
+
+                                                a {
+                                                    color: $color_gray_2;
+                                                    font-size: $fs_1;
+                                                    font-weight: 400;
+                                                    padding: 10px 20px;
+                                                    text-transform: capitalize;
+                                                    position: relative;
+                                                    border-bottom: 1px dashed #e5e5e5;
+                                                    z-index: 1;
+                                                }
+                                            }
+                                        }
+
+                                        &.megamenu {
+                                            width: calc(100% - 30px);
+                                            padding: 30px;
+                                            left: 50%;
+                                            transform: translate(-50%, 20px);
+
+
+                                            li {
+                                                flex-basis: calc(100% / 3);
+
+                                                &.mega-title {
+                                                    color: $color_black_1;
+                                                    font-size: $fs_2;
+                                                    font-weight: $fw_600;
+                                                    text-transform: capitalize;
+
+                                                    span {
+                                                        position: relative;
+                                                        margin-bottom: 15px;
+                                                        display: inline-block;
+                                                    }
+
+                                                    ul {
+                                                        li {
+                                                            flex-basis: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &:hover ul.megamenu {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        transform: translate(-50%, 0);
+                                    }
+
+                                    &:hover ul.dropdown {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        pointer-events: visible;
+                                        transform: translate(0);
+                                    }
+
+
+                                
+                                
+
+                            }
                         }
                     }
                 }
             }
         }
-        
+
     }
+
+    
 }

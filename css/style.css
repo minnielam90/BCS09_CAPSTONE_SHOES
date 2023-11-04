@@ -8,32 +8,144 @@
 header {
   background-color: cadetblue;
 }
-header .header-top {
+header .main-header .header-top {
   padding: 6px 0;
 }
-header .header-top .nav-left .header-social-link a {
+header .main-header .header-top .nav-left .header-social-link a {
   color: #fff;
   font-size: 17px;
   display: inline-block;
   line-height: 1;
   margin-left: 20px;
 }
-header .header-top .nav-left .header-social-link a:first-child {
+header .main-header .header-top .nav-left .header-social-link a:first-child {
   margin-left: 0;
 }
-header .header-top .nav-right .user-info-block {
+header .main-header .header-top .nav-right .user-info-block {
   margin-bottom: 0;
+  margin-left: 40px;
 }
-header .header-top .nav-right .user-info-block li {
+header .main-header .header-top .nav-right .user-info-block li {
   display: inline-block;
   margin-left: 15px;
   list-style: none;
 }
-header .header-top .nav-right .user-info-block li a {
+header .main-header .header-top .nav-right .user-info-block li:first-child {
+  margin-left: 0;
+}
+header .main-header .header-top .nav-right .user-info-block li a {
   color: #fff;
   font-size: 14px;
   text-decoration: none;
 }
-header .header-top .nav-right .user-info-block li a i {
+header .main-header .header-top .nav-right .user-info-block li a i {
   padding-right: 5px;
+}
+header .main-header .header-main-area {
+  padding: 30px 0;
+  position: relative;
+  z-index: 1;
+}
+header .main-header .header-main-area .logo {
+  margin-top: 0;
+  padding: 0;
+  line-height: 1;
+  height: auto;
+  background-color: transparent;
+}
+header .main-header .header-main-area .logo a {
+  transition: all 0.4s;
+  text-decoration: none;
+}
+header .main-header .header-main-area .logo a img {
+  max-width: 100%;
+  transition: all 0.4s;
+  vertical-align: middle;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li {
+  position: relative;
+  list-style: none;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li.active a, header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li:hover a {
+  color: #222222;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li a {
+  color: #fff;
+  font-size: 17px;
+  padding: 14px 15px;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li a i {
+  font-size: 14px;
+  padding: 0 3px;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li ul.dropdown {
+  top: 100%;
+  left: 0;
+  width: 220px;
+  position: absolute;
+  transition: all 0.4s;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99999;
+  pointer-events: none;
+  transform: translateY(20px);
+  border: 1px solid #efefef;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li ul.dropdown li {
+  margin-right: 0;
+  border-right: none;
+  flex-basis: 100%;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li ul.dropdown li a {
+  color: #555555;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  position: relative;
+  border-bottom: 1px dashed #e5e5e5;
+  z-index: 1;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li ul.megamenu {
+  width: calc(100% - 30px);
+  padding: 30px;
+  left: 50%;
+  transform: translate(-50%, 20px);
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li ul.megamenu li {
+  flex-basis: 33.3333333333%;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li ul.megamenu li.mega-title {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li ul.megamenu li.mega-title span {
+  position: relative;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li ul.megamenu li.mega-title ul li {
+  flex-basis: 100%;
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li:hover ul.megamenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul li:hover ul.dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+  transform: translate(0);
 }/*# sourceMappingURL=style.css.map */
