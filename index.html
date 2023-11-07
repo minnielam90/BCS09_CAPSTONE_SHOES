@@ -424,6 +424,27 @@
 
       <!-- banner-statistics-top -->
       <!-- product-gallery -->
+      <section class="product-gallery">
+        <div class="container">
+          <div class="title_product-gallery">
+            <h2>OUR IN STORE</h2>
+            <p>
+              Investigationes demonstraverunt lectores legere me lius quod ii
+              legunt saepius <br />
+              claritas est etiam processus dynamicus, qui sequitur mutationem.
+            </p>
+          </div>
+          <div class="gallery_product-gallery">
+            <div class="div4_2 ">
+              <div class="item_product-gallery slick-4-2">
+                <!-- call api -->
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- banner-statistics-bottom -->
       <!-- testimonials -->
       <!-- blog -->
@@ -494,6 +515,34 @@
       });
     </script>
 
+<script>
+  $(document).ready(function () {
+    $(".slick-4-2").slick({
+      slidesToShow: 4,
+      rows: 2,
+      infinite: true,
+      slidesToScroll: 1,
+      dots: false,
+      accessibility: true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        480: {
+          items: 1,
+        },
+        667: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    });
+  });
+</script>
+
     <!-- wow js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
@@ -504,5 +553,16 @@
     <script>
       new WOW().init();
     </script>
+
+        <!-- axios sdn -->
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+        integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+  
+      <!-- js -->
+      <script src="./index.js"></script>
   </body>
 </html>

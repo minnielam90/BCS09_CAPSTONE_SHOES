@@ -494,4 +494,75 @@ header .main-header .header-main-area .header-right .header-configure-area ul.na
 }
 .service .policy-block .policy-text .policy-cont:last-child {
   margin-bottom: 0;
+}
+
+.product-gallery {
+  text-align: center;
+}
+.product-gallery .title_product-gallery h2 {
+  font-weight: 900;
+  font-size: 24px;
+  color: #222222;
+  margin-top: 80px;
+  line-height: 1.2;
+}
+.product-gallery .title_product-gallery p {
+  color: #555555;
+  font-size: 20px;
+  padding: 14px 0 0;
+}
+.product-gallery .gallery_product-gallery .div4_2 .item_product-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.product-gallery .gallery_product-gallery .div4_2 .item_product-gallery .item {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  text-align: left;
+}
+.product-gallery .gallery_product-gallery .div4_2 .item_product-gallery .item .item_top img {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.product-gallery .gallery_product-gallery .div4_2 .item_product-gallery .item .product_group {
+  background-color: #fff;
+  padding: 26px 10px 28px 10px;
+  border-top: 1px solid #e5e5e5;
+}
+.product-gallery .gallery_product-gallery .div4_2 .item_product-gallery .item .product_group .item_bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-gallery .gallery_product-gallery .div4_2 .item_product-gallery .item .product_group .item_bot .product h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #222222;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-gallery .gallery_product-gallery .div4_2 .item_product-gallery .item .product_group .item_bot .product p {
+  color: #d26b31;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 15px;
+}
+.product-gallery .gallery_product-gallery .div4_2 .item_product-gallery .item .product_group .item_bot .shopping i {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #87b106;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.product-gallery .gallery_product-gallery .div4_2 .item_product-gallery .item .product_group .ratings i {
+  color: #555555;
 }/*# sourceMappingURL=style.css.map */
