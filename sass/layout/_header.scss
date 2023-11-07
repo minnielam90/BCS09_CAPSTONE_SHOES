@@ -1,6 +1,13 @@
 // header
 header {
-    background-color: cadetblue;
+    &.header-transparent {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
 
     .main-header {
         .header-top {
@@ -140,7 +147,7 @@ header {
                                                     padding: 10px 20px;
                                                     text-transform: capitalize;
                                                     position: relative;
-                                                    border-bottom: 1px dashed #e5e5e5;
+                                                    border-bottom: 1px dashed $color_border;
                                                     z-index: 1;
                                                 }
                                             }
@@ -287,7 +294,7 @@ header {
                                                     flex: 0 0 90px;
                                                     max-width: 90px;
                                                     position: relative;
-                                                    border: 1px solid #e5e5e5;
+                                                    border: 1px solid $color_border;
 
                                                     img {
                                                         max-width: 100%;
