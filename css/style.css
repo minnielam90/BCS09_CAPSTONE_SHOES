@@ -542,9 +542,9 @@ header .main-header .header-main-area .header-right .header-configure-area ul.na
   font-size: 16px;
   color: #222222;
   line-height: 1.2;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  position: relative;
 }
 .product-gallery .gallery_product-gallery .div4_2 .item_product-gallery .item .product_group .item_bot .product p {
   color: #d26b31;

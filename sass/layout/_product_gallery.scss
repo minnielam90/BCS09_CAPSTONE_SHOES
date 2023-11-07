@@ -47,9 +47,9 @@
                   font-size: $fs_2;
                   color: $color_black_1;
                   line-height: 1.2;
-                  white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  position: relative;
                 }
                 p {
                   color: #d26b31;
@@ -60,7 +60,7 @@
                 }
               }
               .shopping {
-                i{
+                i {
                   color: #fff;
                   width: 40px;
                   height: 40px;
